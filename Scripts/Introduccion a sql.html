@@ -1,0 +1,164 @@
+<!DOCTYPE html> 
+ <html> 
+   <head>
+   	<title>Sql introducción</title>
+   	<meta charset="UTF-8"> 
+   	<style>
+     #html {
+      background-color: yellow;
+     }
+     #div-1 {
+     	background-color: red;
+     	font-family: courier;
+     	border-radius: 1px;
+        height: 0;
+        margin: 0;
+        width: 400;
+       /** z-index: 1;**/
+        margin-left: 50%;
+        padding: 0;
+        position: relative;
+
+     }
+     #div-2 {
+      background-color: gray;
+      font-family: courier;
+      border-radius: 3px;
+      border-collapse: 10%;
+     /** z-index: 2;**/
+      position: relative;
+      margin-right: 60%;
+     }
+     #div-3 {
+      background-color: blue;
+      font-family: courier;
+      border-radius: 3px;
+      border-collapse: 10%;      
+      margin-right: 60%;      
+     /**z-index: 3;***/
+     position: relative;
+     }
+     #li {
+      float: left;
+      margin-left: 20px; 
+     }
+     #menu-li {
+       float: left;
+       padding: 15px; 
+       margin: 20;
+       display: block;
+       list-style-type: square;
+       color: red; 
+       z-index: 1;
+      }
+   	</style>
+
+   </head> 
+   <body>
+    <div ="menu">
+    <ul id="menu-li">
+      <li>Sobre nosotros</li>
+      <li>Capacitaciones</li>
+      <li>Precios</li>
+      <li>Proxiomos inicios</li>
+      <li>Contacto</li>
+    </ul>
+    </div>
+
+   	<div id="div-1">
+   	<h1>Elementos a utilizar</h1> 
+   	 <p>Los elementos a utilizar para la siguiente clase son 
+   	 	<ol>
+            <li>Sql</li>
+            <li>Gestor de base de datos, el que utilizamos era Mysql Workbench,</li>
+            <li>Xampp</li>
+   	 	</ol>
+
+   	 	Sql : (Structured query lenguage, básicamente son comandos, sentencias para la manipulación de datos con el mismo podremos crear bases de datos, modificarlas, borrar, obtener datos, etc). 
+   	 	<br>
+   	 	Gestor de base de datos : Mysql Workbench puedes descargarlo <a href="https://dev.mysql.com/downloads/file/?id=412167">Aqui </a><br>
+   	 	Hay dos maneras de descargarlo  una es registrandote y la segunda en a traves del enlace debajo de esta la cual no requiere de registro.
+   	 	<br> 
+   	 	Desde <a href="https://www.apachefriends.org/download.html">Aqui </a> podemos descargar xampp para los diferentes sistemas operativos existentes 
+   	 </p>
+   	 	</div>
+      <div id="div-2">
+
+   	 	<h3>Conexión</h3> 
+     <p>
+        Una vez instalada la aplicación, nos conectamos al gestor de base de datos, activamos mysql.
+        <br> Tecleamos en el navegador 
+           Localhost ó 127.0.0.1  y accedemos
+            Los puertos configurado por defecto para esta acción son 3306.
+            //Si de alguna manero nos da error reiniciamos la aplicación .
+   	 </p>
+    </div>
+    <div id="div-3">
+   	 <br>
+   	 <b>Ansi-SQL 92</b>
+   	 <p>
+      Los detalles más importantes a tener en cuentra 
+      * Los comandos los denominaremos Sentencia/Consulta.
+      *Cada linea ó comando ejecutado lo finalizaremos con punto coma (;
+      *Uppercase.
+      * Nombres propios, entidades y/ó atributos no deben contener espacios, carácteres especiales .
+      *Encasillamos con comillas hacia atrás en el estandar ansi sql 92. 
+   	  </p> 
+
+   	  <br> 
+   	  <h2>Tipos de datos en SQL </h2>
+   	  Los tipos de datos en sql se pueden agrupar en 3 tipos. 
+      <ul>
+   	   <li>Cadena .(Nombres, palabras, denominaciones) </lu>
+   	   <li> Númericos (Numeros empleados para calculos aritmeticos, registros)  </li>
+   	   <il> Especiales.(Fechas, horarios.)  </li>
+      </ul>
+
+   	  Dentro de los tipos cadenas tenemos los 
+   	    .char (Character) 
+   	    .varchar (Variable Character).
+
+   	    //Los tipos de datos en cadena se guardan entre comillas dobles. 
+
+   	  <h2>Numericos</h2>
+      <or >
+   	  <li> Smallint- </li>
+   	  <li>Mediumint. </li>
+   	  <li>BigInt     </li>
+   	  <li>Float/Double/Decimal. </li>
+      <or>
+   	  Para calculos aritmeticos utilizamos tipos númericos.
+
+   	  <h2>Especiales</h2>
+      <ul>
+   	  <li>Date : YYYY-MM-DD  </li>
+   	  <li> Time : HH - MM - SS  </li>
+   	  <li> DATETIME : YYYY - MM - DD -HH- MM - SS S  </li>
+      </ul>
+
+   	  <h1>Modificadores de BD</h1> 
+   	  Al crear una base de datos ciertos atributos deben ser atribuidos a los campos previamente para indicarles si pueden ó no ser vacios, el tipo de dato que va a almacenar, quien sera el dato identificador la tabla siendo este único e irrepetible.
+   	  <br>.
+   	  Not Null : Fuerza un atributo (Columna ) a que si ó sí contenga un valor.
+   	  //Por defecto las columnas poseen el valor null.
+
+   	  Unsigned (UN ): Admite valores negativos.
+   	  - Unique (UQ ): Fuerza un atributo a que no pueda guardar el mismo valor dos veces.
+
+   	  Zerofill (ZF) Rellena el remanente de un atributo númerico a su izquierda con 0.
+
+   	  Autoincremente (Ai) : Genera valores para un atributo de forma automática  comenzando en el uno y subiendo una unidad.
+
+   	  *No puede haber dos atributos AI en la misma entidad.
+   	  *El puntero del AI se sigue incrementando poco más que halla errores de BD.
+
+   	  Primary Key (PK) : Fuerza a un atributo sea el identificador único de la entidad.
+
+   	  Restricciones de  Lectura . 
+   	                    Escritura. 
+
+   	  </div>
+
+
+   </body>
+  </html>
