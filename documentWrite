@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Exercise run</title>
+</head>
+<body>
+	<h1>Title without interest</h1>
+	<p id="cuack0">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	<p id="cuack"></p>
+	<!--<script>
+		document.getElementById("cuack").innerHTML = 10 + 2 ;
+	</script>
+    Using document.write() adter am ht,l document fully loadeed, will delete all existing html. Not for testing.
+    -->
+	<!--In a programming lenguage , these programming instructiones are called statements
+
+	A JavaScript program is a list of programming statements
+
+	Js Statements are composed of : 
+	Values, Operators, Expressions, Keywords, and Comments.
+
+	The statement6 are executedf, one by one, iin the same order as they are written
+
+	How everityme the semicolon at the end of each executable statement separate Js statements
+	Multiple statements separated by semicolons, on one line are allowed
+
+
+	JS ignores multiples spaces.
+	Good practice is to put spaces around operators 
+	(= + - * /)-->
+     
+    <!--
+    For best readability, programmers often like to avoid code lines longers than 80 characters. 
+
+    If a JavaScript statement does not fit on one line, the best place to break it is after an operator.
+
+    Javascript statements can be grouped together in code blocks, inside curly brackets {...} 
+
+    The purpos of code blocks is to defin statemens to be execute together.
+
+    Js Keywords
+    Js statements often start with a keyword to identify the Js action to be performed.
+     -->
+    }
+</body>
+</html>
