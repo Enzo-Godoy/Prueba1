@@ -1,0 +1,47 @@
+JavaScript variables are containers for storing data values.
+
+
+Js Indentifiers 
+All Js variables must be identified with unique names. 
+
+These unique names are called identifiers. 
+
+Identifieres can be short name (like x and y) or more descriptive names (age,sum, totalVolume). 
+
+The general rules for constructing names for variables (unique identifiers) are : 
+
+*Names can contain letter, digits, underscores, and dollar signs. 
+*Names must begin with '$' and '_' 
+*Names are case sensitive. 
+*Reserved wors cannot be used as names.
+
+
+The Assignment Operator .
+In js, the equal sign(=) is an "assignment" operator, not an "equal to" operator.
+
+The "equal to" operator is written like == .
+
+Js can hanlde many types of data. 
+Strings are written indise double or single quotes. Numbers are written without quotes. 
+
+
+Declares Js vars.
+
+{
+	var keywords;
+}
+
+//After the declaration, the variables has no value(Technically it has the value of undefined).
+ To assign a value to the variable, use the equal sign. 
+
+ {
+  Var carMi;
+  carMi = "BMW";
+
+  // Also  we can assign a value to the variable when we declare it. 
+
+  var carMi= "Fiat"; 
+ }
+
+ If we wanna declare many variables in one statement. separate the variables  by comma. 
+ Vlue undefined for vars that has to bo calculates, or something that will be provided later, like user input.
