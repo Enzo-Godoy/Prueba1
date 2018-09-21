@@ -1,0 +1,589 @@
+Qué es SQL Server. 
+Es u sistema administrador para bases de datos relacionales basados en la arquitectura cliente-servidor. La finalidad de SQL SERVER es registrar, administrar y analizar datos asegurando la disponibilidad y seguridad de la información en un red incorporativa. 
+
+El motor de base de datos proporciona acceso controlado y procesamiento rápido de transacciones para cumplir los requisitos de las aplicaciones consumidoras de datos más exigentes de la empresa. 
+
+Transact-SQL 
+Es el lenguaje que emplea para mandar peticiones entre el cliente y el servidor. Es un lenguaje exclusivo de SQL Server, pero basado en el lenguaje SQL estándar, utilizadado por casi todos los tipos de bases de datos relacionales que existen. 
+
+
+SQL se ha establecido como el lenguaje estándar de base de datos relacionales. Hay númerosas versiones de SQL. 
+En 1986, 1989, 1992 se sacaron versiones posteriores
+En 1987 IBM publicó su própia norma de SQL denominada SAA-SQL(System Application Architecture Database, Interfaz de base de datos para arquitecturas de aplicación de sistemas). 
+
+Caracteristicas de SQL SQL proporciona dos tipos de lenguajes diferentes : Uno para especificar el esquema relacional DDL  y el otro para expresar las consultas y actualizaciones de  la base de datos. 
+
+Descargar el SQL Server. 
+
+Lenguaje de definición de datos(DDL- Data Definition Lenguage)
+Un esquema de bases de datos se representa mediante un sublenguaje especial llamado lenguaje de definición de datos. 
+El resultado de la compilación de estas instrucciones es un conjunto de tablas, relaciones y cuyas definiciones quedan almacenadas en un  archivo. (tabla ú otro medio de almacenamiento)que contiene "metadatos" esto es, datos acerca de datos.  
+Este archivo comúnmente llamado diccionario de datos (ó catalogo del sistema)es el que se consulta toda vez que se quiere leer, modificar ó eliminar los datos de la base de datos. 
+
+Existen instrucciones especificas para : 
+- Creación de objetos                    (CREATE)
+- Modificación de objetos existentes.    (ALTER)
+- Eliminación de objetos.                 (DROP)
+- Permisos                                (GRAN Y REVOKE). 
+
+
+-------------------------------------------------------------------
+
+Lenguaje de manipulación de datos (DML - Data Manipulation Lenguage). 
+Un D.M.L es un sub-lenguaje de consulta y manipulación de datos. Se entenderá por manipulación de datods a 
+* Recuperacion de información (SELECT)
+* Inserción de nueva información (INSERT)
+* Modificacón de Información Almacenada (UPDATE)
+* Eliminación (borrado)de información existente (DELETE) 
+
+En SQL server este lenguaje se denomina TRANSACT-SQL 
+
+
+Implemetando el Diseño de la Base de Datos. 
+Model de Entidad - Relación 
+
+Introducción. 
+Cuando se utiliza una base de datos para gestionar información, se está plasmando una parte del mundo real en una serie de tablas, registros y campos ubicados en un ordenador, creándose un modelo parcial de la realidad. Antes de crear fisicamente estas tablas se debe realizar un modelo de datos. 
+
+El modelo entidad-relación (E-R )es uno de los varios modelos conceptuales existentes para el diseño de bases de datos. 
+
+
+Se suele cometer el error de ir creando nuebas tablas a medida que se van necesitando, haciendo asi el modelo de datos y la construcción fisíca de las tablas simultaneamente.
+
+El model de datos más extendido es el denominado ENTIDA/RELACIÖN. 
+   --- Se parte de una situación real a partir d ela cual se definen entidades y relaciones entre dichas entidades. 
+
+
+   Entidad 
+Una entidad es cualquier "objeto"discreto sobre el que se tiene información 
+Cada ejemplar de una entidad se denomina instancia. 
+Las entidades son moedeladas en la base de datos como tablas. 
+
+
+
+Relación 
+Una relación describe cierta interdependencia (de cualquier tipo)entre una ó más entidades. 
+Una relación no tiene sentido sin las entidades que s e relacion
+Las relaciones son definidas con claves primarias y claves fóraneas , mantiene la integridad  referencial. 
+
+
+Cardinalidad de las Relaciones 
+Hay una relación que describ e cierta entidad.  
+
+DDL 
+Data definition Lenguage. 
+Instrucciones específicas para .
+
+Creación de objetos (Create) . 
+Modificacón de objetos existentes (ALTER) . 
+Eliminación de objetos (DROP) 
+Permisos (GRAN Y REVOKE). 
+
+
+
+
+Lenguaje de manipulación de datos - DML 
+Recuperación de información (SELECT) 
+Inserción de nueva información (INSERT) 
+Modificación de información almacenada (UPDATE) 
+Eliminación de información existente (DELETE) 
+
+Implementación del Modelo Entidad-Relación 
+
+//Se plasma una parte del mundo real en una serie de tablas, registros y campos ubicados en un ordenador. 
+Antes de crear  físicamente estas tablas se debe realizar un modelo de datos. 
+
+
+El Mod. E-R es uno de varios conceptuales. 
+
+
+Cardinalidad de las relaciones. 
+
+
+Un atributo : Propiedad que nos interesa almacenar, los atributos son almacenados como columnas ó campos de una tabla. 
+
+
+Consideraciones en el planeamiento del sieño lógico de la base de datos. 
+Determinar el negocio y las necesidades del usuario . Considerando cuales son los problemas que hay que salvar y las tareas que los usuarios deberán completar. 
+
+Crear Bases de Datos Normalizadas . Prever innecesarimente información duplicada, inconsistencias en la base de datos, anomalías y problemas de pérdida de la información.
+
+
+Modelado de Elementos de Datos. 
+
+Tablas
+SQL emplea tablas como objetos de almacenamiento de datos, que los usuarios manipulan través de sus aplicaciones. Las tablas son objetos compuesto por una estructura (conjunto de columnas) que almacenan información interrelacionada ( ilas) acerca de algún objeto en general
+. Sus caracteristicas son : 
+
+*Las tablas tienen un solo nombre y es único en toda la base de datos. 
+*Estan compuestas por registros y columnas. 
+* Los registros y columnas pueden estar en diferentes  órdenes .
+* Una base de datos contiene muchas tablas. Cada tabla almacena información . 
+
+
+Restricciones de las Tablas. 
+Los nombres de las tablas deben ser únicos en la base de datos. 
+Los nombres de las columnas debe ser únicos en la tabla. 
+No pueden haber dos registros con el mismo valor de la clave primaria. 
+
+
+Columnas no Descomponibles. 
+Son aquellas columnas que contienen cierta información que no puede ser en dos ó más columnas. 
+Son fáciles de actualizar. 
+Son fáciles de consultar. 
+Mejores para mantener la integridad de los datos. 
+
+
+Restricciones en las columnas 
+Not Null
+No Duplicates. 
+
+Clave Primaria (PRIMARY KEY)
+_ La clave primaria es una columna ó un grupo de columnas que fuerzan la integridad de los datos en la tabla, asegurándose  que cada fila en la tabla es la única. 
+- Solo puede haber una sola clave primaria por tabla. 
+- La clave primaria no permite valores nulos ó duplicados. 
+
+Clave foránea (FOREGIN KEY) 
+- La clave foránea referencia a la clave primaria de una tabla. 
+- Esta puede referenciar a la clave primaria de la misma tabla ó de otra. 
+SQL  SERVER valida la legitimidad de los datos almacenados en una clave foránea. 
+- Fuerza la integridad referencial. 
+
+
+Consultas básicas. 
+- Recuperando datos a través de la sentencia SELECT. 
+
+SELECT select_list 
+[INTO new_table]
+FROM table_source 
+[WHERE search_condition]
+[GROUP BY group_by_expression]
+[HAVING search_condition]
+[ORDER BY order_expression[ASC|DESC]]
+
+Se utiliza un '*' asterisco en la lista de SELECT para recuperar todas las columnas de la tabla. 
+
+
+La lista de la sentencia SELECT recupera y muestra todas las columnas en el orden indicado. 
+Se separan los nombres de las columnas con comas con excepción de la última. 
+
+ Hay dos tipos de alias que utilizan con mayor frecuencia. Alias de columna y alias de tabla. 
+ Los alias de columna existen para ayudar en la organización del resultado. El uso de un alias de columna haría el resultado mucho más legible. 
+
+
+ El segundo tipo de alias es el alias de tabla. Esto se alcanza al colocar un alias directamente  luego del nombre de tabla en cláusula FROM. Esto es conveniente cuando desea obtener información de dos tablas separadas (El término técnico es 'realizar' uniones' equals to  JOINS). 
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

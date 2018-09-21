@@ -1,0 +1,51 @@
+Subconsultas
+Una subconulta es un comando SELECT que retorna un valor simple y se encuentra anidado dentro de un comando SELECT,INSERT, UPDATE ó DELETE ó dentro de otra subconsulta. 
+
+// Una sub-consulta puede usarse en cualquier lugar en que una expresión lo permita. 
+
+*Las consultas siempre van entre parentesis. 
+*La liste de selección de una subconsulta que se especifica con un operador de comparación, solo puede incluir un nombre de expresión ó columna(excepto Exists e IN,  que operan en SELECT* ó en una lista respectivamente. )
+*Los tipos de datos ntext, text y image no están permitidos en las listas de selección de sub-consultas. 
+*Puesto que deben devolver un solo valor, las subconsultas que se especififican con un operador de comparación sin modificar no pueden incluir las clausulas GROUP BY y HAVING. 
+*La palabra clave DISTINCT no se puede usar con subconsultas que incluyan BROUP BY). 
+*Sólo se puede especificar  ORDER BY si se especifica también TOP. 
+*Una vista creada con una subconsulta no sé puede actualizar. 
+*Una vista creada con una sub-consulta  no sé puede actualizar. 
+*La select_list de una subconsulta sólo se puede retornar una columna ó una expresión. De todos modos EXISTES puede operar con SELECT * 
+
+Sub-consultas correlacionadas .
+En las consultas anteriores vimos que la subconsulta que se evalua una sola vez dentro de la clausula WHERE. 
+Las subconsultas correlacionadas son aquellas que se evalúan por cada registro de la tabla referenciada en la cnsulta principal. 
+Estp significa que la ejecución de la subconsulta es repetidad una vez por cada registros que se evalúa en la claúsula WHERE de la consulta principal. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
