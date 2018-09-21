@@ -1,0 +1,76 @@
+Java SE - Clase 2 
+Valores externos. 
+  // Desde la línea de comandos se pueden pasar parámetros al programa, estos llegaran en forma de arreglo de cadena de carácteres al método main. 
+   Estos parámetros pueden ser utilizados para generar configuraciones de corrida ó de instalación del programa.
+    -- En el netbeans, se puede configurar en el proyecto configurado como principal, desde las propiedades del proyecto, running project, arguments. 
+
+
+    EX : 
+     java -classpath aplicacion.jar ar.com.educacionit.Programa 1000 2000 3000 
+
+
+     Vistas del Proyecto : 
+     Las vistas son distintas formas de ver un proyecto. 
+     Proyect View es una vista lógica que representa al proyecto como paquetes,clases,métodos y atributos. 
+      // Files Vies es una vista física de los archivos y directorios que conforman al proyecto. 
+
+
+
+
+       Directorios de un Proyecto. 
+       El netbeans genera la siguiente estructura de directorios para manejar el desarrollo de un proyecto : 
+
+       \src, contiene el código fuente, los archivos Clase.java 
+       \build, se genera en la compilación del proyecto y contiene el código compilado, los Clase.class
+       \dist, es el directorio donde se alojan los archivos para distibuir, tales como archivos miprograma.jar, ó mi aplicacionweb.jar de forma tal que sea simple llevarlas a un ambiente productivo. 
+       \nbproject, contiene archivos propios de la administración del proyecto de NetBeans. 
+
+
+
+      Comandos útiles aplicables a un proyecto. 
+      Al seleccionar la vista de Project View,se puede hacer un click derecho sobre el pryoecto y apareceran los comando más importantes, entre ellos encontraremo. 
+
+
+      Build Project : Compila el proyecto y genera el archivo.jar 
+      Clean Project : Elimina todos los archivos compilados de la versión anterior del proyecto, dejando solo el código fuente. 
+      Run Project : Ejecuta el proyecto desde la clase principal preconfigurada, de no haber una preconfigurada mostrará las opciones de las clases con métodos main deifinidos. 
+      Debug Project : Se utiliza para debuguear el proyecto, hacer una corrida paso a paso viendo el contenido de las variables. 
+      Set Main Project : Configura el proyecto como el proyecto principal, entre varios proyectos. 
+      Close Porject : Cierra el proyecto. 
+      Properties : Permite visualizar las propiedades del proyecto. 
+
+
+
+      El Debugger : 
+      Herramienta que se utiliza para examinar el programa en busca de errores y depurarlos, en un paso a paso por las líneas del código fuente de toda la aplicación. 
+
+      Las partes más importantes son : 
+
+      Utilización de Brakpoints : Se coloca un breakpoint en la línea de código donde se quiere detener la ejecución del programa para evaluar el estado de las variables. 
+
+      Utilización de Watches : Se utiliza para visualizar el valor de variables que uno desee y expresiones del código en ejecución.
+
+      Visualización de Local Variables : Se utiliza para visualizar valores de las variables locales al código en ejecución. 
+
+
+
+
+
+      Introducción a POO . 
+
+      Clase : Una clase es una agrupación de relgas de negociosm ó representación de un concepto de la vida real. Una plantilla con reglas para armar un objeto. 
+      Esta formada por atributos que definen un estado particular y métodos que definen su uso ó comportamiento. 
+
+
+      Objeto : 
+      Un objeto es una instancia de una clase. Pueden tener varias instancias de una misma clase. 
+
+
+      Atributos de Instancia : Los atributos de instancia son aplicables a un solo objeto. 
+      Determinan el estado en el que se encuentra un objeto. 
+
+      Qué son los métodos. 
+      Los métodos determinan el comportamiento y la responsabilidad que tendrán las clases. 
+      Se definen métodos que representen como se van a utilizar las clases. 
+      Este como se van a utilizar las clases signfica que debemos representar el uso que se les da a las clases.
+      Ej :  en la lógica de negocios de la vida real. 

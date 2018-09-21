@@ -1,0 +1,119 @@
+En esta clase : 
+*Sobrecarga de métodos. 
+*Modificadores de visibilidad private y public. 
+*Encapsulamiento.
+*Constructores.
+*Métodos y atributos de instancia y de clase. 
+*Mecanismo de herencia. 
+
+Encapsulamiento. 
+El encapsulamiento habla del modo de ocultar como ha sido implementado el estado, los atributos, de un objeto. 
+Se accede a este estado a través de los métodos públicos, es decir su interfaz pública. 
+Una buena práctica es hacer las validacioens correspondientes a los posibles estados del objeto en estos métodos, de modo tal de mantener al objeto en un estado consistente. 
+
+
+Métodos de acceso. 
+Los métodos de acceso son el medio de acceder a los atributos privados del objeto. 
+Son métodos públicos del objeto : 
+
+*El getter:
+//El método para acceder a los atributos en forma de solo lectura se los denomina "getters". Son los métodos que retornan el valor de los atributos.El NetBeans, como la mayoría de los entornos de desarrollo, permite generarlos de forma automática. 
+
+*El setter : 
+// El método para acceder a los atributos en forma de escritura se los denomina "setters". Son los métodos que establecen el valor de los atributos. 
+También se los genera de forma automática en los entornos de desarrollo. 
+
+Constructores y Destructores. 
+
+El constructor. 
+Los constructores son métodos pertenecientes a la clase. Se utilizan para construir ó instancia una clase. Pueden haber varios constructores, de acuerdo a las necesidades del usuario. 
+
+
+
+El Destructor 
+El destructor se utiliza para destruir una instancia de una clase y liberar memoria. En java no hay destructores, ya que la liberación de memoria es llevada a cabo por el Garbage Collector cuando las instancias de los objetos quedan des-referenciadas. El método dispose () de cada objeto se llama previo a ser "recolectado". 
+
+
+Atributos y Métodos Estáticos. 
+Atributos de Clase. 
+Un atributo de clase es un atributo común a todos los objetos  instanciados de la clase. Al estar definifo en la clase no hace falta instanciar la clase para utilizarlo. Las constantes se suelen definir como atributos de clase. 
+
+Métodos de Clase. 
+Los métodos de clase son un comportamiento común a todas las instancias que pertenecen a la misma clase . Al ser un método de clase, no hace falta instanciar un objeto de la clase para utilizarlo. 
+Estos métodos no hablan del estado actual de la clase, sino solo de un comportamiento genérico de la clase, de un procedimiento que solo utilia los parámetros de entrada ó las variables estáticas. 
+Son para un uso particular y esbien visible cuando un método debe ser estático. 
+
+
+Herencia 
+La herencia se produce a partir de dos clases relacionadas, es decir una subclase que hereda los atributos y los métodos de la superclase. 
+La jerarquía de clases ó arbol de herencia se lleva a cabo a partir de esta herencia entre objetos. 
+
+//Todas las clases en java heredan de la clase Object. 
+
+
+
+Que es el Casting 
+El casting es un procedimiento para transformar una variable primitica de un tipo a otro ó transformar un objeto de una clase a otra clase simempre y cuando halla una relación de herencia entre ambas. 
+
+//Existen distintos tipos de castings de acuerdo a si se utilizan tipos de datos ó clases. 
+
+
+Casteo Implicito (Widening Casting) 
+El Casteo implicito radica en que no se necesita escribir código para que se lleva acabo. 
+Cuando se coloca un valor pequeño en un contendero grande. 
+
+Casteo Explicito (Narrowing Casting)
+El casteo explicito se produce cuando se realiza una conversión estrecha, es decir cuando se colocar un valor grande en uno pequeño.
+//Son susceptibles de pérdida de datos y deben realizarse a través de código fuente, de forma explícita. 
+
+
+El Upcastin se produce a nivel objetos, es una operacion en donde un objeto de un clase derivada se asigna a una referencia cuyo tipo es alguna de las superclases de está. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
